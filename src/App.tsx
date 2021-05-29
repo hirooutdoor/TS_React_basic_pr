@@ -26,6 +26,7 @@ export default function App() {
       <button onClick={onClickFetchData}>Get Data</button>
       {todos.map((todo) => (
         <Todo
+          key={todo.id}
           title={todo.title}
           userId={todo.userId}
           completed={todo.completed}
