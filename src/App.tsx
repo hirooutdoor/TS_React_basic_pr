@@ -7,7 +7,7 @@ type TodoType = {
   userId: number;
   id: number;
   title: string;
-  conpleted: boolean;
+  completed: boolean;
 };
 
 export default function App() {
@@ -28,7 +28,7 @@ export default function App() {
         <Todo
           title={todo.title}
           userId={todo.userId}
-          completed={todo.conpleted}
+          completed={todo.completed}
         />
       ))}
     </div>
