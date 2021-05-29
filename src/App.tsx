@@ -25,7 +25,7 @@ export default function App() {
     <div className="App">
       <button onClick={onClickFetchData}>Get Data</button>
       {todos.map((todo) => (
-        <Todo title={todo.title} userid={todo.userId} />
+        <Todo title={todo.title} userId={todo.userId} />
       ))}
     </div>
   );
