@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Todo } from "./Todo";
 import "./styles.css";
 import { TodoType } from "./types/todo";
+import { Text } from "./Text";
 
 export default function App() {
   const [todos, setTodos] = useState<Array<TodoType>>([]);
@@ -17,6 +18,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <Text color={"red"} fontSize={"30px"} />
       <button onClick={onClickFetchData}>Get Data</button>
       {todos.map((todo) => (
         <Todo
